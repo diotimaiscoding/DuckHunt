@@ -64,7 +64,7 @@ public class Bird {
     public static void loadBirds() {
         for (int i = 0; i < birdOptions.length; i++) {
             for (int j = 1; j < birdFrames+1; j++) {
-                birdsImages[i][j-1] = new Image(Settings.ASSETS_PATH + "duck_" + birdOptions[i] + "/" + j + ".png");
+                birdsImages[i][j-1] = new Image(Bird.class.getResource(Settings.ASSETS_PATH + "duck_" + birdOptions[i] + "/" + j + ".png").toExternalForm());
             }
         }
     }

@@ -18,8 +18,8 @@ public class BackgroundPairCreate {
      * @param foregroundPath The path to the foreground image file.
      */
     public BackgroundPairCreate(String backgroundPath, String foregroundPath) {
-        background = new Image(backgroundPath);
-        foreground = new Image(foregroundPath);
+        background = new Image(BackgroundPairCreate.class.getResource(backgroundPath).toExternalForm());
+        foreground = new Image(BackgroundPairCreate.class.getResource(foregroundPath).toExternalForm());
     }
 
     /**

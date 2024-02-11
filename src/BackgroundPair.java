@@ -64,7 +64,7 @@ public class BackgroundPair {
             backgroundOptions[i-1] = new BackgroundPairCreate(PATH + "background/" + i + ".png", PATH + "foreground/" + i + ".png");
         }
         for (int i = 1; i < NUM_COLORS+1; i++) {
-            Image newCrossHair = new Image(PATH + "crosshair/" + i + ".png");
+            Image newCrossHair = new Image(BackgroundPair.class.getResource(PATH + "crosshair/" + i + ".png").toExternalForm());
             crossHairOptions[i-1] = newCrossHair;
         }
     }

@@ -8,8 +8,8 @@ import javafx.scene.text.TextAlignment;
 
 public class Settings {
     protected static final String ASSETS_PATH = "assets/";
-    private static final Image IMAGE = new Image(ASSETS_PATH + "background/1.png");
-    protected static final Image FAVICON_IMAGE = new Image("assets/welcome/1.png");
+    private static final Image IMAGE = new Image(Settings.class.getResource(ASSETS_PATH + "background/1.png").toExternalForm());
+    protected static final Image FAVICON_IMAGE = new Image(Settings.class.getResource("assets/welcome/1.png").toExternalForm());
     protected static final String TITLE = "HUBBM Duck Hunt";
     
     protected static double SCALE = DuckHunt.SCALE;
