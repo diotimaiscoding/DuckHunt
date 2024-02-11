@@ -21,7 +21,7 @@ public class BackgroundSelection extends SceneLayout<Pane>{
      */
     public BackgroundSelection() {
         BackgroundPair.reset();
-        root = createLayout()
+        root = createLayout();
         scene = new Scene(root, WINDOW_SIZE, WINDOW_SIZE);
         root.requestFocus();
     }
